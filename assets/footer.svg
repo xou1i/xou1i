@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200">
+  <defs>
+    <linearGradient id="footerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#010E50" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#010E50" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="footerLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFC04B" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFC04B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFC04B" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="footerGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a6c" stroke-width="0.3" opacity="0.2"/>
+    </pattern>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="200" fill="url(#footerGrad)"/>
+  <rect width="1200" height="200" fill="url(#footerGrid)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#footerLine)"/>
+
+  <!-- Pixel accents -->
+  <rect x="80" y="40" width="4" height="4" fill="#FFC04B" opacity="0.3" rx="0.5"/>
+  <rect x="1116" y="45" width="3" height="3" fill="#FFC04B" opacity="0.25" rx="0.5"/>
+  <rect x="200" y="150" width="3" height="3" fill="#58687F" opacity="0.2" rx="0.5"/>
+  <rect x="1000" y="140" width="4" height="4" fill="#58687F" opacity="0.2" rx="0.5"/>
+
+  <!-- Footer text -->
+  <text x="600" y="85" text-anchor="middle" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="300" font-size="15" fill="#58687F" letter-spacing="3">
+    Designed with precision. Built with purpose.
+  </text>
+  <text x="600" y="120" text-anchor="middle" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="600" font-size="13" fill="#FFC04B" letter-spacing="5" opacity="0.8">
+    GHAITH
+  </text>
+
+  <!-- Subtle underline -->
+  <rect x="555" y="132" width="90" height="1" fill="url(#footerLine)" opacity="0.5"/>
+
+  <!-- Version year -->
+  <text x="600" y="165" text-anchor="middle" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="300" font-size="11" fill="#58687F" letter-spacing="2" opacity="0.5">
+    2025
+  </text>
+</svg>
