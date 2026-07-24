@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="1200" height="40">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58687F" stroke-width="0.5" opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <!-- Light background to support grid inside divider -->
+  <rect width="1200" height="40" fill="#010E50" opacity="0.3"/>
+  <rect width="1200" height="40" fill="url(#grid)"/>
+
+  <!-- Flat center line with fading effect -->
+  <line x1="80" y1="20" x2="1120" y2="20" stroke="#58687F" stroke-width="1" opacity="0.4">
+    <animate attributeName="opacity" values="0.2; 0.6; 0.2" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Center pixel cluster with heartbeat animation -->
+  <g transform="translate(600, 20)">
+    <animateTransform attributeName="transform" type="scale" values="1; 1.05; 1" additive="sum" dur="2s" repeatCount="indefinite"/>
+    <rect x="-6" y="-6" width="12" height="12" fill="#FFC04B" opacity="0.9" transform="rotate(45)"/>
+    <rect x="-16" y="-3" width="6" height="6" fill="#58687F" opacity="0.6"/>
+    <rect x="10" y="-3" width="6" height="6" fill="#58687F" opacity="0.6"/>
+    <rect x="-26" y="-2" width="4" height="4" fill="#FFC04B" opacity="0.5">
+       <animate attributeName="opacity" values="0.2; 0.8; 0.2" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="22" y="-2" width="4" height="4" fill="#FFC04B" opacity="0.5">
+       <animate attributeName="opacity" values="0.2; 0.8; 0.2" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
